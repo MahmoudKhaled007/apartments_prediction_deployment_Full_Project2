@@ -641,6 +641,7 @@ input {
   -moz-border-radius: 3px;
   border-radius: 3px;
   background: #fff;
+  
 }
 
 .card-4 {
@@ -681,6 +682,38 @@ input {
 
 .main-bg
 {
-  background-image:  url("../images/bg.jpg");
+  background-image:  url("../static/images/sc2.jpeg");
   background-size: cover;
+  display: block;
+
+/* 
+  position: absolute;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  background-position: 50% 50%;
+  display: block;
+  height: 900px;
+  overflow: hidden;
+   top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  z-index: -1; */
+
+  
 }
+
+
+.overlay {
+  background-color: rgb(97, 14, 243);
+  opacity: 0.25;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+      height: 100%;
+z-index: -1;
+}
+
+

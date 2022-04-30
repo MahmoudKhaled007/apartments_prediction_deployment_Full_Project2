@@ -85189,4 +85189,4 @@ delivery_date={'delivery_date_2023': [0.0,
   0.0,
   1.0]}
 
-price_type={}
+price_type={'price_type_Not Negotiable': [1.0]}
