@@ -13,17 +13,17 @@
     <title>Au Register Forms by Colorlib</title>
 
     <!-- Icons font CSS-->
-    <link href="../static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="../static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <!-- Font special for pages-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Vendor CSS-->
-    <link href="../static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="../static/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="../static/css/main.css" rel="stylesheet" media="all">
+    <link href="/static/css/main.css" rel="stylesheet" media="all">
     
 </head>
 
@@ -35,7 +35,7 @@
                     <h1 class="title"><b>Apartments Prediction App</b></h1>
                     <p class="desc">This app predicting Apartments Meter Price & Price count on a specific Features.</p>
                     <br><br>
-                    <form method="POST">
+                    <form method="POST" action="/predict">
 
 
                        
@@ -488,7 +488,7 @@
                                         <div class="p-t-10">
                                             
                                             <label class="radio-container m-r-45">Yes
-                                                <input type="radio" checked="checked" name="Is_Furnished">
+                                                <input type="radio" checked="checked" name="Furnished">
                                                 <span class="checkmark"></span>
                                             </label>
                                             <label class="radio-container">No
@@ -900,13 +900,8 @@
                         
 
                         <div class="p-t-15">
-                            <a href="prediction.html">
-
-                            <button class="btn btn--radius-2 btn--blue" type="submit"> Predict Rented Bikes Count</button>
-                        </a>
-                        <a href="prediction.html">
-                            <button class="btn btn--radius-2 btn--blue" type="button"> See Resault</button>
-                        </a>
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Predict Rented Bikes Count</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -914,14 +909,14 @@
     </div>
 
     <!-- Jquery JS-->
-    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
     <!-- Vendor JS-->
-    <script src="../static/vendor/select2/select2.min.js"></script>
-    <script src="../static/vendor/datepicker/moment.min.js"></script>
-    <script src="../static/vendor/datepicker/daterangepicker.js"></script>
+    <script src="/static/vendor/select2/select2.min.js"></script>
+    <script src="/static/vendor/datepicker/moment.min.js"></script>
+    <script src="/static/vendor/datepicker/daterangepicker.js"></script>
 
     <!-- Main JS-->
-    <script src="../static/js/global.js"></script>
+    <script src="/static/js/global.js"></script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
