@@ -54,7 +54,7 @@ def predict():
     price=meterprice*area
     return render_template('prediction.html', meterprice=meterprice)
 
-
+    
 
 
 
