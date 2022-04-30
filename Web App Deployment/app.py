@@ -15,11 +15,11 @@ def index():
 
 
 
-@app.route('/predict', methods=['GET'])
+@app.route('/predict', methods=['POST'])
 def predict():
-    all_data = request.args
+    all_data = request.form
     area = int(all_data['Area'])
-    furnished = int(all_data['Datetime'])
+    furnished = int(all_data['Furnished'])
     down_payment = int(all_data['Down_payment'])
     electricity_meter = int(all_data['Electricity_Meter'])
     balcony = int(all_data['Balcony'])
@@ -52,9 +52,9 @@ def predict():
     x = scaler.transform([x])
     meterprice = round(model.predict(x)[0])
     price=meterprice*area
-    return render_template('prediction.html', meterprice=meterprice)
+    return render_template('prediction.html', meterprice=meterprice , price=price)
 
-    
+
 
 
 
@@ -63,4 +63,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
